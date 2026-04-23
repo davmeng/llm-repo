@@ -8,6 +8,7 @@ os.environ["ACTIVELOOP_TOKEN"] = expt2
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 ACTIVELOOP_TOKEN = os.getenv("ACTIVELOOP_TOKEN")
+print("WARNING! \nBECAREFUL not to dsave your credential in github!")
 
 print("OpenAI Key = ", OPENAI_API_KEY)
 print("Activeloop = ", ACTIVELOOP_TOKEN)
