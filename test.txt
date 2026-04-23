@@ -1,2 +1,21 @@
+<<<<<<< HEAD
 Z
  
+=======
+from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.vectorstores import DeepLake
+#import deeplake
+#from langchain_openai import ChatOpenAI #, OpenAIEmbeddings
+from langchain.llms import OpenAI
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.chains import RetrievalQA
+#import DeepLake
+import tiktoken
+enc = tiktoken.get_encoding("cl100k_base")
+
+embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
+#embeddings = OpenAIEmbeddings(model="text-embedding-3-small", tokenizer=enc)
+print('Embedding DONE....')
+
+#This file is updated 
+>>>>>>> bedrockllm
